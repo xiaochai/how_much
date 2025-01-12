@@ -15,7 +15,7 @@ foreach (explode("\n", file_get_contents($deal_file)) as $v){
 $snapshot = []; // 账户=>[时间，金额] // 保证是按时间从小到大排列
 foreach (explode("\n", file_get_contents($snapshot_file)) as $v){
     if($v == "" || strpos($v, "产品名") !== false) continue;
-    list($acc, $da, $money) = explode("\t",$v);
+k r     list($acc, $da, $money) = explode("\t",trim($v));
     if ($money == 0) continue;
     $snapshot[$acc][] = [$da, $money];
 }
