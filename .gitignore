@@ -1,2 +1,6 @@
 /target
 ./.idea
+/.idea/.gitignore
+/.idea/how_much.iml
+/.idea/modules.xml
+/.idea/vcs.xml
